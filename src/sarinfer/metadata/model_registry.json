@@ -1,0 +1,18 @@
+{
+    "models": [
+        {
+            "name": "llama_70b",
+            "version": "v1",
+            "location": "disk",
+            "status": "loaded",
+            "timestamp": "2024-09-20T12:00:00Z"
+        },
+        {
+            "name": "llama_8b",
+            "version": "v2",
+            "location": "s3",
+            "status": "unloaded",
+            "timestamp": "2024-09-21T08:30:00Z"
+        }
+    ]
+}

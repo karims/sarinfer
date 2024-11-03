@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -72,17 +73,19 @@ instance/
 docs/_build/
 
 # PyBuilder
-.pybuilder/
 target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Dask worker cache
+dask-worker-space/
 # IPython
 profile_default/
 ipython_config.py
 
 # pyenv
+.python-version
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
 # .python-version
@@ -111,6 +114,7 @@ ipython_config.py
 .pdm-python
 .pdm-build/
 
+# celery beat schedule file
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
@@ -121,14 +125,14 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# dotenv
 # Environments
 .env
+
+# virtualenv
 .venv
-env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -142,12 +146,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.dmypy.json
-dmypy.json
 
-# Pyre type checker
-.pyre/
-
+# IDE settings
+.vscode/
+.idea/
 # pytype static type analyzer
 .pytype/
 
